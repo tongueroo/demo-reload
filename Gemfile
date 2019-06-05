@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 gem "jets"
 
-
 # Include mysql2 gem if you are using ActiveRecord, remove if you are not
 gem "mysql2", "~> 0.5.2"
 
@@ -20,3 +19,5 @@ group :test do
   gem 'launchy'
   gem 'capybara'
 end
+
+gem 'active_model_serializers'

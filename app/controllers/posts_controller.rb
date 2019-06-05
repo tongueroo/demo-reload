@@ -4,8 +4,11 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     @posts = Post.all
-
-    render json: @posts
+    # render json: {example: PostService.new.list}
+    render json: {
+      serialize: PostSerializer.new(@posts.first).as_json,
+      service: PostService.new.list,
+    }
   end
 
   # GET /posts/1
