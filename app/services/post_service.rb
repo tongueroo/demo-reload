@@ -1,5 +1,5 @@
 class PostService
   def list
-    "list3"
+    "list1"
   end
 end
